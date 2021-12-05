@@ -1,4 +1,14 @@
 export type Flow = [number, number, number, number, number, number, number];
+type EndValue = number | boolean;
+type EndFlow = [
+  EndValue,
+  EndValue,
+  EndValue,
+  EndValue,
+  EndValue,
+  EndValue,
+  EndValue
+];
 
 export type Story = {
   title: string;
@@ -8,10 +18,10 @@ export type Story = {
   flow: Flow;
 };
 
-export const instantEnd: Flow[] = [
-  [2, 0, 0, 0, 0, 0, 0],
-  [0, 4, 0, 0, 0, 0, 0],
-  [0, 0, 2, 0, 0, 0, 0],
+export const instantEndFlows: EndFlow[] = [
+  [2, false, false, false, false, false, false],
+  [true, 4, false, false, false, false, false],
+  [true, true, 2, false, false, false, false],
 ];
 
 const stories: Story[] = [
@@ -21,13 +31,6 @@ const stories: Story[] = [
     speaker: "조성제",
     storyPlace: "경기 파주시 적성면 장좌리 479",
     flow: [1, 1, 1, 1, 1, 1, 4],
-  },
-  {
-    title: "남양소 장자못 전설",
-    writtenPlace: "강원 삼척군 삼척읍",
-    speaker: "김일기",
-    storyPlace: "강원 삼척시 성남동 198",
-    flow: [1, 1, 1, 1, 1, 4, 1],
   },
   {
     title: "남양소 장자못 전설",
@@ -282,3 +285,5 @@ const stories: Story[] = [
     flow: [1, 2, 1, 1, 3, 1, 1],
   },
 ];
+
+export default stories;
