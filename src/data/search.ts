@@ -46,7 +46,7 @@ export function dist(flow1: number[], flow2: number[]) {
         endFlow.some((value, i) => flow1[i] !== value && flow2[i] === value)
       )
     ) {
-      sum += Infinity;
+      return Infinity;
     }
     if (flow1[i] > 0 && flow2[i] > 0) {
       sum += Math.pow(flow1[i] - flow2[i], 2) * (1 / weight[i]);
