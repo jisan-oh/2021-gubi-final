@@ -25,22 +25,22 @@ const StoryCard: React.FC<Props> = ({ story, exact }) => (
     </Link>
     <ul>
       <li className="flex items-center">
-        <SpeakerphoneIcon className="w-4 h-4 mr-1" /> 들은 곳:{" "}
+        <SpeakerphoneIcon className="w-4 h-4 mr-1 flex-shrink-0" /> 들은 곳:{" "}
         {story.writtenPlace}
       </li>
       <li className="flex items-center">
-        <UserIcon className="w-4 h-4 mr-1" />
+        <UserIcon className="w-4 h-4 mr-1 flex-shrink-0" />
         이야기하신 분: {story.speaker}
       </li>
       {story.storyPlace && (
         <li className="flex items-center">
-          <LocationMarkerIcon className="w-4 h-4 mr-1" />
+          <LocationMarkerIcon className="w-4 h-4 mr-1 flex-shrink-0" />
           이야기의 배경: {story.storyPlace}
         </li>
       )}
       <li>
         <h4 className="flex items-center">
-          <DocumentTextIcon className="w-4 h-4 mr-1" />
+          <DocumentTextIcon className="w-4 h-4 mr-1 flex-shrink-0" />
           줄거리:
         </h4>
         <ul className="px-5 py-2">
