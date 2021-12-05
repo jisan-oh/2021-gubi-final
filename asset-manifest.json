@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/2021-gubi-final/static/css/main.b44f6793.chunk.css",
-    "main.js": "/2021-gubi-final/static/js/main.e514fc67.chunk.js",
-    "main.js.map": "/2021-gubi-final/static/js/main.e514fc67.chunk.js.map",
+    "main.js": "/2021-gubi-final/static/js/main.fa9af615.chunk.js",
+    "main.js.map": "/2021-gubi-final/static/js/main.fa9af615.chunk.js.map",
     "runtime-main.js": "/2021-gubi-final/static/js/runtime-main.ade6f7cf.js",
     "runtime-main.js.map": "/2021-gubi-final/static/js/runtime-main.ade6f7cf.js.map",
     "static/js/2.a1ba68e0.chunk.js": "/2021-gubi-final/static/js/2.a1ba68e0.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ade6f7cf.js",
     "static/js/2.a1ba68e0.chunk.js",
     "static/css/main.b44f6793.chunk.css",
-    "static/js/main.e514fc67.chunk.js"
+    "static/js/main.fa9af615.chunk.js"
   ]
 }
