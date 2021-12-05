@@ -6,10 +6,6 @@ type SearchResult = {
 };
 
 export function search(flow: Flow): SearchResult {
-  stories.forEach((story) => {
-    console.log(story.title, dist(flow, story.flow));
-  });
-
   return stories
     .sort((a, b) => dist(flow, a.flow) - dist(flow, b.flow))
     .reduce<SearchResult>(

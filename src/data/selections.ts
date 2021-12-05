@@ -5,7 +5,7 @@ type Question = {
 
 const questions: Question[] = [
   {
-    question: "이야기의 시작은?",
+    question: "이야기의 시작은...",
     answers: [
       null,
       "옛날에 한 부자가 있었는데...",
@@ -13,7 +13,7 @@ const questions: Question[] = [
     ],
   },
   {
-    question: "한 부자가 있었는데 스님이 시주를 받으러 왔다. 부자는...",
+    question: "스님이 시주를 받으러 왔다. 부자는...",
     answers: [
       null,
       "시주 그릇에 쇠똥을 퍼주었다",

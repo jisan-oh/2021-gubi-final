@@ -1,5 +1,4 @@
-import styles from "./MapPage.module.css";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import stories from "../data/stories";
 
 declare global {
@@ -18,7 +17,7 @@ const MapPage = () => {
 
     const map = new window.kakao.maps.Map(mapRef.current, {
       center: new window.kakao.maps.LatLng(36, 128),
-      level: 13,
+      level: 12,
     });
 
     const geocoder = new window.kakao.maps.services.Geocoder();
@@ -33,7 +32,7 @@ const MapPage = () => {
             );
             const marker = new window.kakao.maps.Marker({ map, position });
             const infoWindow = new window.kakao.maps.InfoWindow({
-              content: `<div><a href="/stories/${story.title}">${story.title}</a></div>`,
+              content: `<a class="font-medium text-xm whitespace-nowrap" href="/stories/${story.title}">${story.title}</a>`,
             });
             infoWindow.open(map, marker);
           } else {
@@ -46,8 +45,14 @@ const MapPage = () => {
 
   return (
     <div>
-      지도 페이지
-      <div className={styles.map} ref={mapRef} />
+      <h1 className="text-2xl font-semibold mb-1">우리 동네 근처 장자못</h1>
+      <p className="pt-1 pb-3">
+        장자못 전설은 전국 이곳저곳에 전해지고 있는 전설입니다. 그 장소만 해도
+        백여 곳이 된다고 하죠.
+        <br />
+        혹시 우리 동네 근처에도 장자못이 있을까요? 찾아봅시다.
+      </p>
+      <div className="h-screen" ref={mapRef} />
     </div>
   );
 };
