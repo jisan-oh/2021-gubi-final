@@ -32,7 +32,7 @@ const MapPage = () => {
             );
             const marker = new window.kakao.maps.Marker({ map, position });
             const infoWindow = new window.kakao.maps.InfoWindow({
-              content: `<a class="font-medium text-xm whitespace-nowrap" href="/stories/${story.title}">${story.title}</a>`,
+              content: `<a class="font-medium text-xm whitespace-nowrap" href="/2021-gubi-final/stories/${story.title}">${story.title}</a>`,
             });
             infoWindow.open(map, marker);
           } else {
