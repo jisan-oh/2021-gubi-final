@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/2021-gubi-final/static/css/main.44b369d6.chunk.css",
-    "main.js": "/2021-gubi-final/static/js/main.8a3b35c7.chunk.js",
-    "main.js.map": "/2021-gubi-final/static/js/main.8a3b35c7.chunk.js.map",
+    "main.css": "/2021-gubi-final/static/css/main.5bef7c89.chunk.css",
+    "main.js": "/2021-gubi-final/static/js/main.a2fea088.chunk.js",
+    "main.js.map": "/2021-gubi-final/static/js/main.a2fea088.chunk.js.map",
     "runtime-main.js": "/2021-gubi-final/static/js/runtime-main.ade6f7cf.js",
     "runtime-main.js.map": "/2021-gubi-final/static/js/runtime-main.ade6f7cf.js.map",
     "static/js/2.a1ba68e0.chunk.js": "/2021-gubi-final/static/js/2.a1ba68e0.chunk.js",
     "static/js/2.a1ba68e0.chunk.js.map": "/2021-gubi-final/static/js/2.a1ba68e0.chunk.js.map",
     "index.html": "/2021-gubi-final/index.html",
-    "static/css/main.44b369d6.chunk.css.map": "/2021-gubi-final/static/css/main.44b369d6.chunk.css.map",
+    "static/css/main.5bef7c89.chunk.css.map": "/2021-gubi-final/static/css/main.5bef7c89.chunk.css.map",
     "static/js/2.a1ba68e0.chunk.js.LICENSE.txt": "/2021-gubi-final/static/js/2.a1ba68e0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ade6f7cf.js",
     "static/js/2.a1ba68e0.chunk.js",
-    "static/css/main.44b369d6.chunk.css",
-    "static/js/main.8a3b35c7.chunk.js"
+    "static/css/main.5bef7c89.chunk.css",
+    "static/js/main.a2fea088.chunk.js"
   ]
 }
