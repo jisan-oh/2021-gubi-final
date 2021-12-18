@@ -1,11 +1,13 @@
 type Question = {
   question: string;
+  photo: string;
   answers: (string | null)[];
 };
 
 const questions: Question[] = [
   {
     question: "이야기의 시작은...",
+    photo: "photos/no1.jpeg",
     answers: [
       null,
       "옛날에 한 부자가 있었는데...",
@@ -14,6 +16,7 @@ const questions: Question[] = [
   },
   {
     question: "스님이 시주를 받으러 왔다. 부자는...",
+    photo: "photos/no2.jpeg",
     answers: [
       null,
       "시주 그릇에 쇠똥을 퍼주었다",
@@ -25,6 +28,7 @@ const questions: Question[] = [
   },
   {
     question: "그렇게 스님이 고초를 겪고 나서...",
+    photo: "photos/no3.jpeg",
     answers: [
       null,
       "며느리가 나와서 쌀을 대신 주었다",
@@ -33,6 +37,7 @@ const questions: Question[] = [
   },
   {
     question: "스님은 며느리한테...",
+    photo: "photos/no4.jpeg",
     answers: [
       null,
       "뒤를 돌아보지 말고 따라오라고 했다",
@@ -41,6 +46,7 @@ const questions: Question[] = [
   },
   {
     question: "며느리가 집을 떠나오면서...",
+    photo: "photos/no5.jpeg",
     answers: [
       null,
       "그냥 혼자 나왔다",
@@ -50,6 +56,7 @@ const questions: Question[] = [
   },
   {
     question: "결국 며느리는...",
+    photo: "photos/no6.jpeg",
     answers: [
       null,
       "바위가 되어 죽었다",
@@ -60,6 +67,7 @@ const questions: Question[] = [
   },
   {
     question: "그 이후로...",
+    photo: "photos/no7.jpeg",
     answers: [
       null,
       "딱히 남은 얘기는 없다",

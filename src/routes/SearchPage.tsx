@@ -36,36 +36,43 @@ const SearchPage = () => {
             (!instantEnd || instantEnd[questionIndex]) ? (
               <li
                 key={question.question}
-                className="shadow-md px-6 py-6 rounded-xl border-2 border-purple-50 bg-gradient-to-r from-white via-white to-purple-50"
+                className="shadow-md p-6 rounded-xl border-2 border-purple-50 bg-gradient-to-r from-white via-white to-purple-50 md:flex"
               >
-                <h2 className="font-semibold text-xl mb-3">
-                  {question.question}
-                </h2>
-                <ul className="space-y-2 ml-1">
-                  {question.answers.map((answer, answerIndex) =>
-                    answer === null ? null : (
-                      <li key={answer} className="flex items-center">
-                        <input
-                          type="radio"
-                          className="w-4 h-4 flex-shrink-0"
-                          checked={flow[questionIndex] === answerIndex}
-                          onChange={() =>
-                            setFlow((flow) => {
-                              const newFlow = [...flow] as Flow;
-                              newFlow[questionIndex] = answerIndex;
-                              return newFlow;
-                            })
-                          }
-                          id={answer}
-                          name={question.question}
-                        />
-                        <label htmlFor={answer} className="ml-3">
-                          {answer}
-                        </label>
-                      </li>
-                    )
-                  )}
-                </ul>
+                <div>
+                  <h2 className="font-semibold text-xl mb-3">
+                    {question.question}
+                  </h2>
+                  <ul className="space-y-2 ml-1">
+                    {question.answers.map((answer, answerIndex) =>
+                      answer === null ? null : (
+                        <li key={answer} className="flex items-center">
+                          <input
+                            type="radio"
+                            className="w-4 h-4 flex-shrink-0"
+                            checked={flow[questionIndex] === answerIndex}
+                            onChange={() =>
+                              setFlow((flow) => {
+                                const newFlow = [...flow] as Flow;
+                                newFlow[questionIndex] = answerIndex;
+                                return newFlow;
+                              })
+                            }
+                            id={answer}
+                            name={question.question}
+                          />
+                          <label htmlFor={answer} className="ml-3">
+                            {answer}
+                          </label>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <img
+                  className="rounded-md mt-4 mx-auto h-48 md:pl-4 md:mr-0 md:mt-0"
+                  src={question.photo}
+                  alt="관련 이미지"
+                />
               </li>
             ) : null
           )}
