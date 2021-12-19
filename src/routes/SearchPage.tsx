@@ -68,11 +68,13 @@ const SearchPage = () => {
                     )}
                   </ul>
                 </div>
-                <img
-                  className="rounded-md mt-4 mx-auto h-48 md:pl-4 md:mr-0 md:mt-0"
-                  src={question.photo}
-                  alt="관련 이미지"
-                />
+                <div className="mt-4 mx-auto md:pl-4 md:mr-0 md:mt-0 flex justify-center">
+                  <img
+                    className="rounded-md h-48"
+                    src={question.photo}
+                    alt="관련 이미지"
+                  />
+                </div>
               </li>
             ) : null
           )}
